@@ -20,15 +20,19 @@ jobs:
       with:
         node-version: '12.x'
 
-    - name: npm install, build, and test
+    - name: npm install and build
       run: |
         npm install
         npm run build --if-present
+
+    - name: 'Login into Azure'
+      uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'synack-web-search-engine'
         slot-name: 'production'
-        credentials: ${{ secrets.SYNACK_WEB_SEARCH_ENGINE_AZURE_PROFILE }}
         package: build/
