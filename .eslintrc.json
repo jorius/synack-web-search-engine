@@ -1,0 +1,112 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "plugins": [
+    "react",
+    "jest"
+  ],
+  "rules": {
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "function-paren-newline": [
+      "error",
+      "consistent"
+    ],
+    "implicit-arrow-linebreak": "off",
+    "import/prefer-default-export": 0,
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1,
+        "ignoredNodes": [
+          "JSXElement"
+        ]
+      }
+    ],
+    "jest/expect-expect": 0,
+    "jsx-a11y/alt-text": 0,
+    "max-len": [
+      1,
+      120,
+      2,
+      {
+        "ignoreComments": true
+      }
+    ],
+    "no-case-declarations": 0,
+    "no-confusing-arrow": 0,
+    "no-empty": [
+      "error",
+      {
+        "allowEmptyCatch": true
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-shadow": 0,
+    "no-useless-constructor": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/jsx-indent": 0,
+    "react/jsx-indent-props": [
+      "error",
+      4
+    ],
+    "react/no-array-index-key": 0,
+    "react/no-typos": 0,
+    "react/prefer-stateless-function": [
+      2,
+      {
+        "ignorePureComponents": true
+      }
+    ],
+    "react/prop-types": [
+      2,
+      {
+        "skipUndeclared": true
+      }
+    ],
+    "react/jsx-props-no-spreading": 1,
+    "react/destructuring-assignment": 0,
+    "jest/no-standalone-expect": 1
+  }
+}
