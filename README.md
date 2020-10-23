@@ -4,7 +4,7 @@
 <hr />
 
 ## Currently deployed
-### https://env-testing.azurewebsites.net
+### https://synack-web-search-engine.azurewebsites.net
 <hr />
 
 ## Content
