@@ -26,8 +26,9 @@ jobs:
         npm run build --if-present
 
     - name: 'Deploy to Azure Web App'
-      uses: azure/upload-artifact@v2
+      uses: azure/webapps-deploy@v2
       with:
-        name: 'synack-web-search-engine'
+        app-name: 'synack-web-search-engine'
+        slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_59342a05c6c94f7d91bca57851a2b88a }}
-        path: build/
+        package: build/
