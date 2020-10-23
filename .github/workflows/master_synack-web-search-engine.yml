@@ -23,10 +23,10 @@ jobs:
     - name: 'Create .env file'
       uses: SpicyPizza/create-envfile@v1
       with:
-        REACT_APP_BING_SEARCH_ENGINE_API_KEY: ${{ secrets.REACT_APP_BING_SEARCH_ENGINE_API_KEY }}
-        REACT_APP_ENV_NAME: production
-        REACT_APP_GOOGLE_SEARCH_ENGINE_API_KEY: ${{ secrets.REACT_APP_GOOGLE_SEARCH_ENGINE_API_KEY }}
-        REACT_APP_GOOGLE_SEARCH_ENGINE_ID: ${{ secrets.REACT_APP_GOOGLE_SEARCH_ENGINE_ID }}
+        envkey_REACT_APP_BING_SEARCH_ENGINE_API_KEY: ${{ secrets.REACT_APP_BING_SEARCH_ENGINE_API_KEY }}
+        envkey_REACT_APP_ENV_NAME: production
+        envkey_REACT_APP_GOOGLE_SEARCH_ENGINE_API_KEY: ${{ secrets.REACT_APP_GOOGLE_SEARCH_ENGINE_API_KEY }}
+        envkey_REACT_APP_GOOGLE_SEARCH_ENGINE_ID: ${{ secrets.REACT_APP_GOOGLE_SEARCH_ENGINE_ID }}
         file_name: .env
 
     - name: 'Install npm packages and make build'
