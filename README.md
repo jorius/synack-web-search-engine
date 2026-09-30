@@ -4,7 +4,7 @@
 <hr />
 
 ## Currently deployed
-### https://synack-web-search-engine.azurewebsites.net
+### Formerly https://synack-web-search-engine.azurewebsites.net — the Azure deployment was retired in 2026; run it locally with your own API keys (see below).
 <hr />
 
 ## Content
@@ -45,10 +45,10 @@ Steps
 1. Create a search engine in https://programmablesearchengine.google.com/cse/all.
     - Once created turn on the option called "Search the entire web".
     - Store the `Search engine ID` somewhere by the moment.
-    - The `Search engine ID` property wich should look like: `298a0ef142f5bd446`.
+    - The `Search engine ID` property wich should look like: `your-search-engine-id`.
 
 2. Then go to the docs https://programmablesearchengine.google.com/cse/all and create and `API KEY` since there.
-    - It should look like: `AIzaSyCj-QWPgNWRIMyE4Wr17CDbN1ITW8jGYBw` store it somewhere by the moment as well.
+    - It should look like: `AIza...your-google-api-key` store it somewhere by the moment as well.
 
 ### We're ready to go!
 
@@ -79,7 +79,7 @@ Steps
 4. Go to your newly created service.
 5. Go to the left pane menu option called `Keys and Endpoint`.
 6. Store one of your two keys somewhere by the moment.
-7. Your key should look like `2011cb2cdee24ebf8cef34499a81db0e`.
+7. Your key should look like `your-bing-api-key`.
 
 Some helpful links
 1. https://docs.microsoft.com/en-us/azure/cognitive-services/bing-web-search/
